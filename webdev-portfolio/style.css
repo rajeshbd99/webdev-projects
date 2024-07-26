@@ -198,3 +198,26 @@ section{
 .resume-download{
     margin-top: 70px;
 }
+
+/* footer */
+
+footer{
+    padding: 130px 230px;
+    display: flex;
+    gap: 100px;
+}
+
+.footer-column{
+   width: 50%;
+}
+
+footer input[type="text"] ,footer textarea{
+    height:65px;
+    border-radius: 5px;
+    background-color: white;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 24px;
+    border: none;
+}
