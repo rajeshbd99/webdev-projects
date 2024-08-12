@@ -9,6 +9,9 @@
   }
 
 /* Common Style */
+.hide{
+    display: none;
+}
 .text-center{
     text-align: center;
 }
@@ -220,4 +223,45 @@ footer input[type="text"] ,footer textarea{
     padding: 10px 20px;
     margin-bottom: 24px;
     border: none;
+}
+
+/* responsive design */
+
+@media screen and (max-width: 576px){
+    .skills-container, .resume-container, footer, .about-items, .banner, nav, nav>ul{
+        flex-direction: column;
+    }
+
+    nav>ul{
+        gap:20px;
+    }
+
+    footer, .about{
+        padding: 20px;
+    }
+
+    .footer-column{
+        width: 100%; 
+    }
+
+    footer input[type="text"] ,footer textarea{
+        width: calc(100% - 40px);
+    }
+
+    .banner{
+        margin: 20px;
+    }
+
+    .header{
+        background-image: none;
+    }
+
+    .banner-profile-pic{
+        width: 100%;
+    }
+
+    .btn-style{
+        margin-bottom: 20px;
+    }
+
 }
