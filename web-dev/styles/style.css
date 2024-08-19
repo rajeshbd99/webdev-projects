@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: Azeret Mono;
+    color: rgb(13, 19, 33);
+    margin: 0;
+    padding: 0;
+}
+
+.hero-background {
+    background: url(../images/Hero-bg.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 580px;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.hero-background .hero-content .group1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.hero-background .hero-content .hero-p {
+    margin: 24px 0 32px;
+    padding: 0 73px;
+    color: rgb(13, 19, 33);
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.8;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.hero-background .hero-content .hero-button {
+    padding: 16px 18px 16px 18px;
+    color: rgb(255, 255, 255);
+    background: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.hero-background .hero-content .hero-h1 {
+    color: rgb(13, 19, 33);
+    font-size: 26px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 38px;
+    letter-spacing: 0%;
+}
+
+.hero-background .hero-content {
+    width: 890px;
+}
+
+.hero-background .hero-content .hero-button-container {
+    text-align: center;
+}
+
+
+.container {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.sec-head{
+    color: rgb(13, 19, 33);
+    text-align: center;
+    letter-spacing: 0%;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 37px; 
+}
+
+.sec-p {
+    color: rgb(13, 19, 33, 0.7);
+    text-align: center;
+    letter-spacing: 0%;
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;   
+}
+
+#dev {
+    background: rgba(13, 19, 33, 0.02);
+    padding: 80px;
+    border-radius: 16px;
+}
+
+#dev>p {
+    padding-bottom: 50px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90.00deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%);
+    gap: 50px;
+    border-radius: 16px;
+    padding: 48px;
+    margin-top: 32px;
+}
+
+.card:first-child {
+    margin-top: 0;
+}
+
+.card:nth-child(2) {
+    background: linear-gradient(270.00deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%);
+}
+
+.content button {
+    background-color: transparent;
+    border: 1px solid rgb(13, 19, 33);
+    padding: 12px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    opacity: 0.8;
+}
+
+.content p {
+    color: rgb(13, 19, 33, 0.7);
+    letter-spacing: 0%;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    line-height: 20px;
+}
+
+.content h3 {
+    color: rgba(13, 19, 33, 0.7);
+    letter-spacing: 0%;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: rgb(13, 19, 33);
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+#inspiration>p {
+    margin-bottom: 48px;
+    opacity: 0.8;
+}
+
+iframe {
+    border-radius: 20px;
+}
+
+#inspiration .inspiration-link {
+    border: 2px solid rgba(13, 19, 33, 0.2);
+    display: flex;
+    justify-content: center;
+    border-radius: 16px;
+    padding: 20px;    
+}
+
+#target {
+    margin-top: 150px;
+}
+
+.target-container {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 50px;
+    gap: 25px;
+}
+
+.target-box>p {
+    color: rgb(13, 19, 33);
+    margin-top: 10px;
+    margin-bottom: 24px;
+    opacity: 0.8;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+}
+
+.target-box>h2 {
+    color: rgb(13, 19, 33);
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.target-box {
+    height: auto;
+    padding: 40px;
+    max-width: 300px; 
+    border-radius: 16px;
+}
+
+.target-box .target-box-anc {
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    text-align: left;
+    text-decoration-line: underline;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0%;    
+}
+
+.target1 {
+    background: rgba(255, 76, 30, 0.05);
+}
+
+.target2 {
+    background: rgba(0, 76, 232, 0.05);
+}
+
+.target3 {
+    background: rgba(255, 223, 0, 0.05);
+}
+
+::placeholder {
+    color: rgba(13, 19, 33, 0.4);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    line-height: 20px;
+}
+
+input:focus::placeholder{
+    color: violet;
+}
+
+#support {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/handshake.jpg');
+    margin-top: 50px;
+    height: auto;
+    padding: 65px 50px;
+    color: white;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;  
+}
+
+.support-text {
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    background: rgb(255, 255, 255);
+    padding: 15px 18px 15px 18px;
+    width: 548px; 
+    border-radius: 10px;   
+}
+
+#support p {
+    color: rgb(255, 255, 255);
+    margin-top: 16px;
+    margin-bottom: 24px;
+    text-align: center;
+    opacity: 0.8;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;   
+}
+
+#support h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%; 
+}
+
+.support-submit {
+    background: rgb(255, 255, 255);
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;  
+}
+
+#footer p {
+    color: rgb(13, 19, 33);
+    text-align: center;
+    letter-spacing: 0%;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;   
+}
+
+.footer-button {
+    column-gap: 20px;
+    align-items: flex-end;
+    display: flex;   
+}
+
+footer {
+    background: rgba(13, 19, 33, 0.03);
+    border-radius: 20px;   
+}
+
+#footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    padding: 25px;   
+}
