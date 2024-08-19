@@ -1,0 +1,1050 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@font-face {
+  font-family: miamaFont;
+  src: url("./font/Miama.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: Inter;
+}
+
+/* Common Design */
+
+.btn {
+  background: rgb(230, 83, 60);
+  color: rgb(255, 255, 255);
+  padding: 16px 40px;
+  max-width: 220px;
+  border: none;
+  border-radius: 40px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.title {
+  font-family: Inter;
+  font-style: italic;
+  color: rgb(230, 83, 60);
+}
+
+body {
+  background-color: black;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-size: 48px;
+  font-weight: 800;
+  font-weight: 900;
+}
+
+.container-parent {
+  background: linear-gradient(to left, #000000, #343434);
+  min-height: 58vh;
+}
+
+.container {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  max-height: 20vh;
+}
+
+/* Common Design */
+
+/* Navbar Design */
+
+.header {
+  background: linear-gradient(to left, #000000, #343434);
+}
+
+.nav-bar {
+  margin: 0;
+  padding: 0 10rem;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding-right: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 40px;
+}
+
+.nav-title p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  line-height: 25px;
+  letter-spacing: 0.5px;
+}
+
+.hamburger {
+  color: white;
+  font-size: 2.5rem;
+  display: none;
+}
+
+.home {
+  background: rgb(230, 83, 60);
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+
+/* Navbar Design */
+
+/* Banner Design */
+
+.text {
+  margin: 28px 0px;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-item {
+  width: 32rem;
+}
+
+.banner-item p {
+  margin-bottom: 25px;
+}
+
+.banner-item h1 {
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 5rem;
+}
+
+.shape {
+  font-family: miamaFont;
+  color: rgb(255, 255, 255);
+  font-size: 10rem;
+  font-weight: 400;
+}
+
+.ban-btn {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.ban-btn .btn-small {
+  display: none;
+}
+
+.btn-app {
+  background-color: rgb(20, 20, 20);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.banner-image {
+  position: relative;
+  top: -2rem;
+  right: 3rem;
+}
+
+.shape1 {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  width: 12rem;
+  top: 20%;
+  right: -20%;
+  padding: 20px 0 20px 20px;
+  position: absolute;
+}
+
+.shape1 h2 {
+  font-family: Inter;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 40px;
+}
+
+.shape1 p {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.shape2 {
+  background: rgba(48, 48, 48, 0.54);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  width: 12rem;
+  bottom: 12%;
+  left: -30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.shape2 h4 {
+  color: rgb(250, 250, 249);
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 25px;
+}
+
+#round {
+  background: rgb(230, 83, 60);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.shape2-content {
+  padding: 20px 20px 20px 10px;
+}
+
+/* Banner Design */
+
+/* Habits Design */
+
+.your-habit {
+  margin: 6rem 0;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.habits {
+  text-align: center;
+  padding-bottom: 6rem;
+  margin-left: 3rem;
+}
+
+.habits-h1 {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.habits-p {
+  margin-top: 2rem;
+}
+
+.habit-shape {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  margin: 0 auto;
+}
+
+.habit-img {
+  border-radius: 50%;
+}
+
+.habit-shape h6 {
+  color: rgb(255, 255, 255);
+  margin-top: 1rem;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.habit-shape p {
+  margin-top: 1rem;
+}
+
+/* Habits Design */
+
+/* Run Extra Design */
+
+.run-extra {
+  background: rgb(34, 34, 34);
+  border-radius: 20px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 160px;
+}
+
+.run-details {
+  padding-top: 40px;
+  padding-left: 50px;
+}
+
+.run-details h2 {
+  color: rgb(255, 255, 255);
+  padding-bottom: 15px;
+  font-family: Inter;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.run-details p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  padding-bottom: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+
+
+.run-extra img {
+  border-radius: 20px;
+  width: 70%;
+}
+
+.run-extra-img {
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Run Extra Design */
+
+/* Facilities Design */
+
+.facilities {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.facilities-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.facility-card {
+  min-width: 220px;
+  border-radius: 18px;
+  padding: 4rem 2.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgb(24, 24, 24);
+  text-align: center;
+}
+
+.facility-content h3 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.facility-content p {
+  margin-top: 2rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.facilities-text {
+  margin-top: 2rem;
+}
+
+.card-btn {
+  margin-top: 1.5rem;
+  max-width: none;
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+
+/* Facilities Design */
+
+/* BMI Design */
+.bmi-info {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: start;
+  padding-left: 30rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.bmi-info h3 {
+  padding-bottom: 2rem;
+}
+
+.bmi-data {
+  background: rgb(34, 34, 34);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.bmi-table {
+  padding: 5rem 0 5rem 0;
+  margin: 0;
+}
+
+.bmi-table h3 {
+  color: rgb(255, 255, 255);
+  padding-bottom: 5rem;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: 200px 200px;
+}
+
+.item {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgb(255, 255, 255, 0.5);
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+  padding: 1rem;
+}
+
+input[type="text"],
+select {
+  color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #333;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.cal-bmi {
+  max-width: 35rem;
+}
+
+.cal-bmi h3 {
+  color: rgb(255, 255, 255);
+  text-align: left;
+  font-size: 28px;
+  font-weight: 900;
+  padding-bottom: 1rem;
+}
+
+.cal-bmi p {
+  padding-bottom: 3rem;
+}
+
+.bmi-calculator {
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  gap: 10px;
+}
+
+.bmi-calculator input[type="text"]:nth-child(1) {
+  grid-column: span 1;
+}
+
+.bmi-calculator input[type="text"]:nth-child(2) {
+  grid-column: span 1;
+}
+
+.bmi-calculator input[type="text"]:nth-child(3) {
+  grid-column: span 1;
+}
+
+.bmi-calculator select:nth-child(4) {
+  grid-column: span 1;
+}
+
+.bmi-calculator select:nth-child(5) {
+  grid-column: span 2;
+}
+
+/* BMI Design */
+
+/* Our Team Design */
+
+.our-team {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding-left: 5rem;
+  text-align: center;
+}
+
+.our-team p{
+  margin-top: 2rem;
+}
+
+.box {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  max-height: 18vh;
+  max-width: 65%;
+}
+
+.team-box {
+  background: rgba(255, 255, 255, 0.1);
+  max-height: 120vh;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, 18rem);
+  row-gap: 2rem;
+  padding: 2rem;
+  border-radius: 18px;
+}
+
+.team-card {
+  width: 325px;
+}
+
+.image1 {
+  background: url("images/trainer1.png");
+}
+
+.image2 {
+  background: url("images/trainer2.png");
+}
+
+.image3 {
+  background: url("images/trainer3.png");
+}
+
+.image4 {
+  background: url("images/trainer4.png");
+}
+
+.image5 {
+  background: url("images/trainer5.png");
+}
+
+.image6 {
+  background: url("images/trainer6.png");
+}
+
+.team-commom {
+  height: 250px;
+  width: 85%;
+  position: relative;
+  border-radius: 18px;
+  background-size: cover;
+  background-position: center;
+}
+
+.info {
+  left: 1rem;
+  top: 12rem;
+  position: absolute;
+}
+
+.info h4 {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px #333;
+  font-size: 25px;
+}
+
+.info p {
+  color: rgba(255, 255, 255, 1);
+  font-size: 15px;
+}
+
+/* Our Team Design */
+
+/* Footer Design */
+
+footer {
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 40rem;
+}
+
+.footer {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot-info {
+  padding-top: 2rem;
+  width: 25rem;
+}
+
+hr{
+  border: 0.1px solid rgba(255, 255, 255, 0.1);
+  width: 80%;
+  margin-left: 12rem;
+}
+
+.footer-data h4 {
+  font-size: 35px;
+  margin-bottom: 2rem;
+}
+
+.footer-data p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 18px;
+  margin-bottom: 1.4rem;
+}
+
+.privacy h4{
+  color: rgba(255, 255, 255, 0.4);
+  padding: 2rem;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center; 
+}
+
+/* Footer Design */
+
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+
+/* Responsive Design */
+
+/* Navbar Responsive */
+
+@media screen and (max-width: 576px) {
+  main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .nav-title {
+    display: none;
+  }
+
+  .nav-bar {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    color: rgb(255, 255, 255);
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+}
+
+/* Navbar Responsive  */
+
+/* Banner Responsive */
+
+@media screen and (max-width: 576px) {
+  .all{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container-parent {
+    min-height: 89.9vh;
+  }
+
+  .btn {
+    max-width: 150px;
+  }
+
+  .banner {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .banner-item {
+    max-width: 100%;
+  }
+
+  .banner-item h1 {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 35px;
+    font-weight: 900;
+    text-align: start;
+    line-height: 120%;
+    letter-spacing: 0%;
+    padding-bottom: 1.8rem;
+  }
+
+  .banner-item p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+  }
+
+  .ban-btn .btn-big {
+    display: none;
+  }
+
+  .ban-btn .btn-small {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    height: 3.2rem;
+    width: 10rem;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .ban-btn .btn-app {
+    display: flex;
+    justify-content: center;
+    padding: 16px 25px;
+    height: 3.2rem;
+    width: 10rem;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .banner-image {
+    text-align: center;
+    width: 100%;
+    top: 1.7vh;
+    right: 2vh;
+  }
+
+  .banner-image img {
+    width: 80%;
+    height: auto;
+  }
+
+  .shape {
+    font-size: 4.5rem;
+    font-weight: 400;
+  }
+
+  .shape1 {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    width: 11rem;
+    top: 9%;
+    position: absolute;
+    padding: 15px 0 15px 15px;
+  }
+
+  .shape1 p {
+    font-size: 10px;
+  }
+
+  .shape2 {
+    bottom: 41%;
+    left: -0%;
+    width: 11rem;
+  }
+}
+
+/* Banner Responsive */
+
+/* Habits Responsive */
+
+@media screen and (max-width: 576px) {
+  .habits {
+    padding: 0 0 5rem 0;
+    margin: 0;
+  }
+  .habit-shape {
+    grid-template-columns: repeat(1, 15rem);
+    padding: 3rem;
+    justify-items: center;
+  }
+}
+
+/* Habits Responsive */
+
+/* Run Extra Responsive */
+
+@media screen and (max-width: 576px) {
+  .run-extra {
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .join {
+    align-content: center;
+    padding: 20px 100px;
+    max-width: 500px;
+    margin-right: 2rem;
+    justify-content: center;
+  }
+
+  .run-details p {
+    font-size: 15px;
+  }
+
+  .run-details h2 {
+    font-size: 35px;
+  }
+
+  .run-extra-img {
+    padding: 45px 0;
+  }
+
+  .run-extra img {
+    width: 90%;
+  }
+}
+
+/* Run Extra Responsive */
+
+/* Facilities Responsive */
+
+@media screen and (max-width: 576px) {
+  .facilities-container {
+    grid-template-columns: repeat(1, 15rem);
+    align-items: center;
+  }
+
+  .facility-card {
+    width: 100%;
+    max-width: none;
+  }
+
+  .card-btn {
+    max-width: 100%;
+  }
+}
+
+/* Facilities Responsive */
+
+/* BMI Responsive */
+
+@media screen and (max-width: 576px) {
+  .bmi-sec {
+    margin: 0;
+    padding: 0;
+  }
+  .bmi-info {
+    padding-left: 0;
+    text-align: start;
+  }
+
+  .bmi-info h3 {
+    font-size: 35px;
+  }
+
+  .bmi-data {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+  }
+
+  .cal-bmi {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .cal-bmi h3 {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 900;
+    text-align: start;
+    padding-right: 9rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .cal-bmi p {
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .bmi-calculator input[type="text"]:nth-child(1) {
+    grid-column: span 1;
+    max-width: 170px;
+  }
+
+  .bmi-calculator input[type="text"]:nth-child(2) {
+    grid-column: span 1;
+    max-width: 170px;
+  }
+
+  .bmi-calculator input[type="text"]:nth-child(3) {
+    grid-column: span 1;
+    max-width: 170px;
+  }
+
+  .bmi-calculator select:nth-child(4) {
+    grid-column: span 1;
+    max-width: 200px;
+  }
+
+  .bmi-calculator select:nth-child(5) {
+    grid-column: span 2;
+    max-width: 420px;
+  }
+}
+
+/* BMI Responsive */
+
+/* Our Team Responsive */
+
+@media screen and (max-width: 576px) {
+  .our-team {
+    padding-left: 0;
+  }
+
+  .team-box {
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 17rem);
+    padding: 0rem 2rem 2rem 3rem;
+    padding-bottom: 2rem;
+    max-height: 300vh;
+    max-width: 80%;
+  }
+
+  .team-card {
+    width: 20rem;
+  }
+
+  .image1 {
+    display: none;
+  }
+
+  .image2 {
+    width: 100%;
+    height: 200px;
+  }
+
+  .image3 {
+    width: 100%;
+    height: 200px;
+  }
+
+  .image4 {
+    display: none;
+  }
+
+  .image5 {
+    width: 100%;
+    height: 200px;
+  }
+
+  .image6 {
+    width: 100%;
+    height: 200px;
+  }
+
+  .team-commom {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    height: 310px;
+    width: 80%;
+    border-radius: 18px;
+  }
+
+  .info {
+    top: 15rem;
+    left: 1rem;
+  }
+
+  .info h4 {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px #333;
+    font-size: 25px;
+  }
+
+  .info p {
+    color: rgba(255, 255, 255, 1);
+    font-size: 15px;
+  }
+}
+
+/* Our Team Responsive  */
+
+/* Footer Responsive */
+
+@media screen and (max-width: 576px) {
+  footer{
+    max-height: 240vh;
+    min-width: 80%;
+    margin-top: 95rem;
+  }
+  
+  .footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 2rem;
+      margin: 0;
+  }
+
+  .foot-info {
+      width: 100%;
+  }
+
+  .footer-data h4 {
+    margin-top: 2rem;
+    padding-right: 18rem;
+    font-size: 24px;
+  }
+
+  .footer-data p {
+      font-size: 14px;
+  }
+
+  hr{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .privacy {
+      font-size: 16px;
+  }
+}
+
+/* Footer Responsive */
+
+/* Responsive Design */
