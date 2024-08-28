@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real State</title>
+  <!-- Tailwind CDN-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+            "button-primary": "#ABEF5F",
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+
+  <style>
+    .manrope-font {
+      font-family: "Manrope", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 200;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body class="manrope-font">
+  <!-- Header Part -->
+  <header class="md:container mx-auto mt-8">
+    <!-- Navbar Start  -->
+    <nav>
+      <div class="navbar flex justify-between">
+        <div class="gap-2">
+          <button class="h-6 w-6 bg-button-primary -rotate- rounded-full text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6 p-1">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </button>
+          <a class="font-bold text-4xl">Hometrend</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-lg">
+            <li><a href="#" class="text-black font-semibold">Home</a></li>
+            <li><a href="#" class="text-gray-500 font-medium">Services</a></li>
+            <li><a href="#" class="text-gray-500 font-medium">Portfolio</a></li>
+            <li><a href="#" class="text-gray-500 font-medium">Blogs</a></li>
+            <li><a href="#" class="text-gray-500 font-medium">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="gap-3 hidden md:flex">
+          <div tabindex="0" role="button" class="btn btn-circle bg-white">
+            <button class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+          </div>
+          <div class="indicator btn btn-circle bg-white hidden md:flex">
+            <button class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </button>
+          </div>
+          <div class="btn rounded-full bg-button-primary font-bold hidden md:flex">
+            <a class="text-lg">Book Consult</a>
+            <button class="h-6 w-6 bg-black -rotate- rounded-full text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 p-1">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="md:hidden">
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img alt="" src="./assets/dropdown.png" />
+              </div>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a href="#" class="text-gray-500">Home</a></li>
+              <li><a href="#" class="text-gray-500">Services</a></li>
+              <li><a href="#" class="text-gray-500">Portfolio</a></li>
+              <li><a href="#" class="text-gray-500">Blogs</a></li>
+              <li><a href="#" class="text-gray-500">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Hero Start -->
+    <div class="flex flex-col items-center">
+      <div class="w-3/5 h-[13 rem] md:h-[40rem] flex items-center justify-center">
+        <img class="w-[30rem] sm:w-[50rem] md:w-[70rem]" src="./assets/banner.png" alt="" />
+      </div>
+      <div class="flex flex-col items-center text-center mt-10 px-5 md:px-10">
+        <h1 class="font-bold text-3xl md:text-5xl max-w-6xl my-4 lg:my-6">Find Your Perfect Property with Our Comprehensive Listings and Guidance</h1>
+        <p class="text-[#494949] text-xl font-normal max-w-5xl mb-5 lg:mb-8">Explore a curated selection of homes that suit every lifestyle. Whether you’re buying, selling, or renting, our comprehensive real estate services are designed to make your journey smooth and successful.</p>
+      </div>
+      <button
+        class="flex justify-center items-center gap-x-4 w-[80%] sm:w-[20rem] h-[4rem] rounded-[3rem] bg-lime-300 hover:bg-lime-400 bg-opacity-50 border-2 border-lime-400">
+        <p class="text-[#494949] text-[1.5rem] font-semibold">View Details</p>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-4 bg-lime-600 rounded-full w-7 h-7 p-1">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+        </svg>
+      </button>
+    </div>
+    <!-- Hero End -->
+  </header>
+
+  <!-- Main Part -->
+
+  <main>
+    <section class="mt-14 bg-[#F4F4F4]">
+      <!-- About US Start -->
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 items-center py-8 md:py-16 lg:py-24 container mx-auto gap-10 px-5 md:px-10">
+        <div class="space-y-12 relative">
+          <img src="./assets/Vector.png" class="hidden lg:block absolute left-[-10%] top-[-2rem]" alt="" />
+          <div class="text-center lg:text-left">
+            <div class="btn rounded-full bg-white font-bold">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+              <a class="text-[#494949] text-2xl">About Us</a>
+            </div>
+          </div>
+          <h2
+            class="font-extrabold text-3xl lg:text-4xl max-w-md md:max-w-xl lg:max-w-md mx-auto text-center lg:mx-0 lg:text-left">
+            We design thoughtful, liveable spaces
+          </h2>
+          <p class="text-[#494949] font-normal text-center lg:text-left">
+            Connecting you with your dream home through personalized service and expert real estate solutions.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
+            <div class="card card-side bg-white">
+              <figure class="pl-8">
+                <img src="./assets/commercial.png" class="" alt="" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title font-extrabold text-xl">
+                  Commercial
+                </h2>
+                <p class="text-[#494949] font-normal max-w-sm">
+                  Empowering your business with premium commercial properties tailored to your growth and success
+                </p>
+              </div>
+            </div>
+            <div class="card card-side bg-white">
+              <figure class="pl-8">
+                <img src="./assets/residential.png" alt="" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title font-extrabold text-xl text-black-secondary">
+                  Residential
+                </h2>
+                <p class="text-[#494949] font-normal max-w-sm">
+                  Helping you find the perfect home with tailored residential real estate solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img class="w-full h-auto" src="./assets/Rectangle.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- About Us End -->
+    <!-- Our Works Start -->
+    <section class="md:container mx-auto mb-10 mt-24">
+      <div class="pb-6">
+        <div>
+          <div class="text-center">
+            <div class="btn rounded-full font-bold bg-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+              <a class="text-[#494949] text-2xl">How we works</a>
+            </div>
+          </div>
+          <div class="text-center">
+            <h3 class="my-6 text-2xl font-bold md:text-3xl lg:text-4xl xl:text-5xl">
+              Our Work Process
+            </h3>
+            <p class="text-[#494949] font-normal py-2 mx-auto max-w-2xl">
+              Streamlined, transparent, and client-focused - guiding you through every step of your real estate journey.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mx-4 my-6">
+          <div class="bg-[#E7C1D3] p-6 rounded-lg">
+            <div><img src="./assets/concept.png" alt="" /></div>
+            <h5 class="font-bold text-xl py-5">Concept</h5>
+            <p class="text-[#494949] font-normal">
+              Transforming your vision into innovative, functional design concepts tailored to your needs.</p>
+          </div>
+          <div class="bg-[#EFDA6E] p-6 rounded-lg">
+            <div><img src="./assets/flow-chart.png" alt="" /></div>
+            <h5 class="font-bold text-xl py-5">Design Process</h5>
+            <p class="text-[#494949] font-normal">
+              From initial sketches to final plans, we ensure every detail meets your expectations and goals.
+            </p>
+          </div>
+          <div class="bg-[#A4DAC3] p-6 rounded-lg">
+            <div><img src="./assets/vision.png" alt="" /></div>
+            <h5 class="font-bold text-xl py-5">Supervision</h5>
+            <p class="text-[#494949] font-normal">
+              Overseeing every stage of the project to ensure quality, consistency, and timely completion.
+            </p>
+          </div>
+          <div class="bg-[#77AAEA] p-6 rounded-lg">
+            <div><img src="./assets/budget-planning.png" alt="" /></div>
+            <h5 class="font-bold text-xl py-5">Budget Planning</h5>
+            <p class="text-[#494949] font-normal">
+              Strategically managing costs to maximize value and ensure your project stays on budget.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Works End -->
+    <!-- Latest Portfolio Start -->
+    <section class="container mx-auto py-7 md:py-14 lg:py-20 px-10">
+      <div class="text-center space-y-6">
+        <div class="flex justify-center items-center">
+          <button
+            class="rounded-full  bg-lime-300 hover:bg-lime-400 bg-opacity-50 font-extrabold px-6 py-2 flex items-center">
+            <div class="mr-2 flex justify-center items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+            </div>
+            <p class="text-[#494949] text-xl">Explore our Latest works</p>
+          </button>
+        </div>
+        <h2 class="font-extrabold text-3xl lg:text-4xl max-w-md mx-auto">Our Latest Portfolio</h2>
+        <p class="text-[#494949] max-w-xl mx-auto font-normal">Explore our latest projects to see how we bring innovative designs and exceptional quality to life.</p>
+      </div>
+      <div class="grid grid-cols-12 mt-10 gap-5">
+        <div class="col-span-12 lg:col-span-8 p-4 border-2 rounded-3xl flex items-center">
+          <div class="flex flex-col md:flex-row gap-5 md:gap-10 items-center rounded-lg">
+            <img class="object-cover w-full md:w-1/2 h-full" src="./assets/img1.png" alt="" />
+            <div class="space-y-3">
+              <h2 class="font-extrabold text-xl">Commercial</h2>
+              <p class="text-[#494949] max-w-xl font-normal">Showcasing our latest commercial projects that combine functionality with cutting-edge design for business success.</p>
+              <div>
+                <button class="font-bold flex items-center">
+                  <p class="text-[#494949] text-xl">View Details</p>
+                  <div class="ml-2 w-8 h-8 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="size-6 bg-[#ABEF5F] rounded-full w-7 h-7 p-1">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 p-4 border-2 rounded-3xl flex justify-center items-center">
+          <img class="w-full" src="./assets/img2.png" alt="" />
+        </div>
+        <div class="col-span-12 md:col-span-6 lg:col-span-3 p-4 border-2 rounded-3xl flex justify-center items-center">
+          <img class="w-full" src="./assets/img3.png" alt="" />
+        </div>
+        <div class="col-span-12 lg:col-span-6 p-4 border-2 rounded-3xl flex items-center">
+          <div class="flex flex-col md:flex-row gap-5 md:gap-10 items-center rounded-lg">
+            <div class="w-full h-full">
+              <img class="object-cover w-full h-full" src="./assets/img4.png" alt="" />
+            </div>
+            <div class="space-y-3">
+              <h2 class="font-extrabold text-xl">Residential</h2>
+              <p class="text-[#494949] max-w-xl font-normal">Discover our newest residential projects, crafted to provide comfort and style in your ideal home.</p>
+              <div>
+                <button class="font-bold flex items-center">
+                  <p class="text-[#494949] text-xl">View Details</p>
+                  <div class="ml-2 w-8 h-8 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="size-6 bg-[#ABEF5F] rounded-full w-7 h-7 p-1">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 md:col-span-6 lg:col-span-3 p-4 border-2 rounded-3xl flex justify-center items-center">
+          <img class="w-full" src="./assets/img5.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Latest Portfolio End -->
+    <!-- Unique Section Start-->
+
+    <section class="bg-[#F4F4F4] py-14 mb-28">
+      <div class="container mx-auto px-5 md:px-10">
+        <div class="text-center space-y-6">
+          <div class="flex justify-center items-center">
+            <button
+              class="rounded-full bg-lime-300 hover:bg-lime-400 bg-opacity-50 font-extrabold px-6 py-2 flex items-center">
+              <div class="mr-2 flex justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </div>
+              <p class="text-[#494949] text-2xl">Our Happy Clients</p>
+            </button>
+          </div>
+          <h2 class="font-extrabold text-3xl lg:text-4xl max-w-md mx-auto">Testimonials</h2>
+          <p class="text-[#494949] font-normal max-w-xl mx-auto">Hear what our satisfied clients have to say about our services and their
+            experiences with us.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-10">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="flex items-center mb-4">
+              <img class="w-16 h-16 rounded-full mr-4" src="./assets/client1.jpg" alt="Client 1">
+              <div>
+                <h5 class="font-bold text-xl">John Doe</h5>
+                <p class="text-gray-500 font-normal">CEO, Company</p>
+              </div>
+            </div>
+            <p class="text-gray-700 font-normal">"Working with this team was a game-changer. Their expert guidance and personalized service made finding our dream home a seamless and enjoyable experience. Highly recommend!"</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="flex items-center mb-4">
+              <img class="w-16 h-16 rounded-full mr-4" src="./assets/client2.jpg" alt="Client 2">
+              <div>
+                <h5 class="font-bold text-xl">Jane Smith</h5>
+                <p class="text-gray-500 font-normal">Designer</p>
+              </div>
+            </div>
+            <p class="text-gray-700 font-normal">"The attention to detail and the quality of work were outstanding. I highly
+              recommend their services to anyone looking for top-notch design."</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="flex items-center mb-4">
+              <img class="w-16 h-16 rounded-full mr-4" src="./assets/client3.jpg" alt="Client 3">
+              <div>
+                <h5 class="font-bold text-xl">Michael Brown</h5>
+                <p class="text-gray-500 font-normal">Architect</p>
+              </div>
+            </div>
+            <p class="text-gray-700 font-normal">"Their innovative approach and dedication to the project were impressive. The final
+              result was beyond what we had imagined."</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="flex items-center mb-4">
+              <img class="w-16 h-16 rounded-full mr-4" src="./assets/client4.jpg" alt="Client 4">
+              <div>
+                <h5 class="font-bold text-xl">Emily Davis</h5>
+                <p class="text-gray-500 font-normal">Interior Designer</p>
+              </div>
+            </div>
+            <p class="text-gray-700 font-normal">"Working with this team was a fantastic experience. Their creativity and attention
+              to detail transformed our space into something truly special."</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="flex items-center mb-4">
+              <img class="w-16 h-16 rounded-full mr-4" src="./assets/client5.jpg" alt="Client 5">
+              <div>
+                <h5 class="font-bold text-xl">David Wilson</h5>
+                <p class="text-gray-500 font-normal">Project Manager</p>
+              </div>
+            </div>
+            <p class="text-gray-700 font-normal">"Their professionalism and dedication to the project were outstanding. The final
+              result exceeded our expectations."</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="flex items-center mb-4">
+              <img class="w-16 h-16 rounded-full mr-4" src="./assets/client6.jpg" alt="Client 6">
+              <div>
+                <h5 class="font-bold text-xl">Sophia Johnson</h5>
+                <p class="text-gray-500 font-normal">Homeowner</p>
+              </div>
+            </div>
+            <p class="text-gray-700 font-normal">"The team's innovative approach and attention to detail were impressive. We are
+              thrilled with the final result."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unique Section End -->
+
+    <!-- Contact Us Start -->
+    <section class="bg-cover bg-no-repeat"
+      style="background-image: url('./assets/bg.jpg'); background-size: cover; background-position: center">
+      <div class="container mx-auto py-8 md:py-16 lg:py-24 px-5">
+        <div class="space-y-6 text-center">
+          <div class="flex justify-center items-center">
+            <button
+              class="rounded-full  bg-lime-300 hover:bg-lime-400 bg-opacity-50 font-extrabold px-6 py-2 flex items-center">
+              <div class="mr-2 flex justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </div>
+              <p class="text-[#494949] text-2xl">Let's Connect</p>
+            </button>
+          </div>
+          <h2 class="font-extrabold text-3xl lg:text-4xl max-w-xl mx-auto">Let's Discuss Next Project</h2>
+          <p class="text-[#494949] max-w-xl mx-auto font-normal">
+            Ready to start your next project? Let's discuss your ideas and turn them into reality together.
+          </p>
+        </div>
+        <div class="space-y-3 md:space-y-5 max-w-5xl mx-auto mt-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <input class="w-full rounded-xl bg-white p-5" placeholder="First Name*" type="text">
+            <input class="w-full rounded-xl bg-white p-5" placeholder="Last Name*" type="text">
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <input class="w-full rounded-xl bg-white p-5" placeholder="Phone Number*" type="text">
+            <input class="w-full rounded-xl bg-white p-5" placeholder="Email*" type="email">
+          </div>
+          <div>
+            <textarea rows="8" class="w-full rounded-xl bg-white p-5" placeholder="Write your message here" name=""
+              id=""></textarea>
+          </div>
+          <button
+            class="btn rounded-full w-full bg-button-primary text-xl font-bold px-4 py-2 flex justify-center items-center ">
+            <p class="text-[#494949] text-2xl">Send Mail</p>
+            <div class="ml-2 text-white w-8 h-8 flex justify-center items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 p-1 bg-black rounded-full">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Us End -->
+  </main>
+
+  <!-- Footer Part -->
+
+  <footer>
+    <footer class=" bg-[#1C1C1C]">
+      <section class="md:container mx-auto">
+        <div>
+          <div class="flex justify-center items-center pt-20">
+            <button class="h-6 w-6 bg-button-primary -rotate- rounded-full text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 p-1">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+            </button>
+            <h3 class="text-white text-3xl font-bold mx-2">Hometrend</h3>
+          </div>
+          <div class="text-center py-6">
+            <p class="text-[#737373] max-w-sm md:max-w-2xl mx-auto font-normal">Stay connected with us for updates, inquiries, and more information about our services and offerings.</p>
+          </div>
+        </div>
+        <div>
+          <div class=" text-[#E9E9E9] font-bold flex flex-col md:flex-row justify-center items-center gap-6 md:gap-28">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Blogs</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <div class=" btn rounded-full bg-button-primary font-bold my-6">
+            <a class="text-xl">Book Consult</a>
+            <button class="h-6 w-6 bg-black -rotate- rounded-full text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 p-1">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </footer>
+</body>
+
+</html>
