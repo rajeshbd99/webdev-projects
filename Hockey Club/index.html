@@ -8,17 +8,7 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-            },
-          },
-        },
-      };
-    </script>
+    
 
     <!-- DaisyUI CDN -->
 
@@ -28,6 +18,21 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: "#da373d",
+                "btn-primary": "#FF4240",
+                "basic-color": "#FF4240",
+                "dark" : "#424247",
+              },
+            },
+          },
+        };
+      </script>
 
     <!-- Google Fonts -->
 
@@ -51,8 +56,54 @@
   <body class="manrope-regular">
     <!-- Header Part -->
 
-     <header>
-        
+     <header class="mt-10 mb-5">
+        <nav class="md:container mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Pages</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-2xl md:text-4xl font-bold">Hockey<span class="text-basic-color">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 font-semibold text-xl">
+                    <li class="hover:text-orange-500 duration-300 ease-in-out"><a href="#">Home</a></li>
+                    <li class="hover:text-orange-500 duration-300 ease-in-out"><a href="#">About</a></li>
+                    <li class="hover:text-orange-500 duration-300 ease-in-out"><a href="#">Pages</a></li>
+                    <li class="hover:text-orange-500 duration-300 ease-in-out"><a href="#">Blog</a></li>
+                    <li class="hover:text-orange-500 duration-300 ease-in-out"><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end space-x-4 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                      </svg>  
+                  <a class="btn bg-btn-primary text-white text-lg font-[500]">Get Ticket</a>
+                </div>
+              </div>
+        </nav>
      </header>
 
     <!-- Main Part -->
