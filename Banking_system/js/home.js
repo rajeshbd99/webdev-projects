@@ -15,7 +15,7 @@ document.getElementById('btn-add-money').addEventListener('click',function(event
         
     }
     else{
-        console.log('Invalid Pin');
+        alert('Invalid Pin');
     }
 
 })
