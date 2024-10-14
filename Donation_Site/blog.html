@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .lexend{
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+          }
+    </style>
+</head>
+
+<body class="bg-white lexend">
+    <!-- Navbar -->
+    <nav class="bg-red-50 shadow-lg fixed w-full h-28 z-10 top-0">
+        <div class="container mx-auto p-6 flex justify-between items-center">
+            <a href="index.html" class="px-6 py-2 bg-green-400 text-Black font-bold rounded-lg hover:bg-gray-300">Home</a>
+            <h1 class="text-2xl font-bold flex items-center">
+                <span class="mr-2 sm: pl-5">
+                    <img src="./assets/logo.png" alt="" srcset="">
+                </span> Donate Bangladesh
+            </h1>
+            <div class="flex items-center space-x-4">
+                <span class="text-lg font-bold flex">
+                    <img src="./assets/coin.png" alt="" srcset="">
+                    <span id="account-balance" class="pl-2">5500 BDT</span>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <main class="mt-40">
+        <div class="m-10 p-2 container mx-auto">
+            <h1 class="text-5xl font-bold ">Important FAQ</h1>
+        </div>
+        <div class="container mx-auto">
+            <div class=" collapse collapse-arrow bg-base-200 mb-4">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-bold">What is the Document Object Model(DOM)?</div>
+                <div class="collapse-content">
+                  <p class="text-justify">
+                    The Document Object Model (DOM) is a programming interface that represents the structure of a web document as a tree of objects. It allows dynamic access and manipulation of elements, attributes, and content using languages like JavaScript.
+                </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200 mb-4">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-bold">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                  <p class="text-justify">An element can be selected from the DOM using methods like getElementById for selecting by ID, getElementsByClassName for selecting by class, and querySelector or querySelectorAll for selecting based on CSS selectors. These methods provide flexible ways to access and manipulate specific elements in a document.
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200 mb-4">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-bold">What is event delegation in the context of the DOM, and why is it useful ?</div>
+                <div class="collapse-content">
+                  <p class="text-justify"> 
+                    Event delegation is a technique where a single event listener is attached to a parent element to manage events for its child elements. It is useful because it improves performance by reducing the number of event listeners and allows dynamic handling of events on elements added later to the DOM.
+                </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200 mb-4">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-bold">How do you manipulate an element's attributes and styles using the DOM ?</div>
+                <div class="collapse-content">
+                <p class="text-justify">
+                    To manipulate an element's attributes in the DOM, use methods like setAttribute, getAttribute, and removeAttribute. For styles, modify the style property directly, such as element.style.color = 'blue', or manage classes with classList methods like add, remove, and toggle.
+                </p>
+                </div>
+              </div>
+        </div>
+    </main>
+</body>
+
+</html>
