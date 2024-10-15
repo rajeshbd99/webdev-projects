@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <main class="flex justify-center">
+    <main class="flex items-center justify-center min-h-screen">
         <div class="mockup-phone">
             <div class="camera"></div>
             <div class="display">
@@ -25,10 +25,10 @@
                  </div>
                  <div class="divider"></div>
                  <!-- User Action Buttons -->
-                 <div>
-                    <button id="btn-show-add-money" class="btn btn-lg">Add Money</button>
-                    <button id="btn-show-cash-out" class="btn btn-lg">Cash Out</button>
-                    <button id="btn-show-transaction" class="btn btn-lg">Transactions</button>
+                 <div class="flex gap-4">
+                    <button id="btn-show-add-money" class="btn btn-lg w-28">Add Money</button>
+                    <button id="btn-show-cash-out" class="btn btn-lg w-28">Cash Out</button>
+                    <button id="btn-show-transaction" class="btn btn-lg w-28">Transactions</button>
                  </div>
                  <div class="divider"></div>
                  <!-- Add Money Form Start-->
@@ -75,8 +75,8 @@
                 <!-- Cash Out End -->
                 <!-- Transacton Start -->
                  <div id="transaction-section">
-                    <h2 class="hidden text-4xl text-center">Transaction History</h2>
-                    <div id="transaction-container" class="space-y-4 bg-slate-500 text-yellow-300">
+                    <h2 class="text-4xl text-center mb-3">Transaction History</h2>
+                    <div id="transaction-container" class="space-y-4 text-yellow-500 text-lg">
 
                     </div>
                  </div>

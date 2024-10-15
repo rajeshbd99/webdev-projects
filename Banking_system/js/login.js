@@ -3,10 +3,10 @@ document.getElementById('button-login').addEventListener('click',function(event)
     const phoneNumber = document.getElementById('phone-number').value;
     const pinNumber = document.getElementById('pin-number').value;
     
-    if(phoneNumber === '5' && pinNumber === '1234'){
+    if(phoneNumber === '1234567890' && pinNumber === '1234'){
         window.location.href = 'home.html';
     }
     else{
-        alert('Passwoerd is 1234');
+        alert('phonenumber is 1 to 0 and Passwoerd is 1234');
     }
 })
