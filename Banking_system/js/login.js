@@ -7,6 +7,6 @@ document.getElementById('button-login').addEventListener('click',function(event)
         window.location.href = 'home.html';
     }
     else{
-        console.log('Login Failed');
+        alert('Passwoerd is 1234');
     }
 })
