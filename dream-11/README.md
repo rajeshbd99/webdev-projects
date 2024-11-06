@@ -43,7 +43,7 @@ BPL-Dream 11 is a React-based fantasy cricket application where users can select
 
 ## 🌐 Live Demo
 
-[View Live Project](https://winning-xi.netlify.app/)
+[View Live Project](https://winningxi.netlify.app)
 
 ---
 
