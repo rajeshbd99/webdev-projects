@@ -1,0 +1,215 @@
+[
+  {
+    "id": 1,
+    "category": "Laptops",
+    "title": "Dell XPS 13",
+    "price": "$999.99",
+    "stock": "In Stock",
+    "stockBadge": "Green",
+    "description": "Ultra-slim, high-performance laptop with 13.4-inch Infinity Edge display.",
+    "specification": {
+      "processor": "Intel i7 11th Gen",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "display": "Touchscreen"
+    },
+    "rating": "⭐ ⭐ ⭐ ⭐ ⭐",
+    "ratingValue": 4.8,
+    "image": "https://i.ibb.co/BfCSR41/tablet-xps-13-9315-blue-gallery-10.jpg"
+  },
+  {
+    "id": 2,
+    "category": "Phones",
+    "title": "Samsung Galaxy S23 Ultra",
+    "price": "$999.99",
+    "stock": "In Stock",
+    "stockBadge": "Green",
+    "description": "High-performance smartphone with advanced camera features.",
+    "specification": {
+      "processor": "Snapdragon 888",
+      "ram": "12GB",
+      "storage": "256GB",
+      "display": "6.8-inch AMOLED"
+    },
+    "rating": "⭐ ⭐ ⭐ ⭐ ⭐",
+    "ratingValue": 4.9,
+    "image": "https://i.ibb.co/tKXwD84/71l-D7e-Gd-W-L.jpg"
+  },
+  {
+    "id": 3,
+    "category": "Accessories",
+    "title": "Sony WH-1000XM4",
+    "price": "$349.99",
+    "stock": "In Stock",
+    "stockBadge": "Green",
+    "description": "Industry-leading noise-canceling headphones.",
+    "specification": {
+      "batteryLife": "30 hours",
+      "connectivity": "Bluetooth 5.0",
+      "features": "Noise Cancelling, Touch Controls"
+    },
+    "rating": "⭐ ⭐ ⭐ ⭐ ⭐",
+    "ratingValue": 4.7,
+    "image": "https://i.ibb.co/1JnpgQd/1000-X-1000.webp"
+  },
+  {
+    "id": 4,
+    "category": "Laptops",
+    "title": "Asus ROG Zephyrus",
+    "price": "$1999.99",
+    "stock": "In Stock",
+    "stockBadge": "Green",
+    "description": "A gaming laptop with high-end graphics.",
+    "specification": {
+      "processor": "AMD Ryzen 9",
+      "ram": "32GB",
+      "storage": "1TB SSD",
+      "display": "15.6-inch FHD 144Hz"
+    },
+    "rating": "⭐ ⭐ ⭐ ⭐ ⭐",
+    "ratingValue": 4.9,
+    "image": "https://i.ibb.co/Xb5y4WD/71-JFMDI0t-OL.jpg"
+  },
+  {
+    "id": 5,
+    "category": "Laptops",
+    "title": "Lenovo ThinkPad X1 Carbon",
+    "price": "$1799.99",
+    "stock": "In Stock",
+    "stockBadge": "Green",
+    "description": "A lightweight laptop for travel.",
+    "specification": {
+      "processor": "Intel i7 10th Gen",
+      "ram": "16GB",
+      "storage": "1TB SSD",
+      "display": "14-inch FHD"
+    },
+    "rating": "⭐ ⭐ ⭐ ⭐",
+    "ratingValue": 4.6,
+    "image": "https://i.ibb.co/WzDDSbq/awpq0e6jt9ujg17v234kqrc7kfhzz4909134.jpg"
+  },
+  {
+    "id": 6,
+    "category": "Phones",
+    "title": "iPhone 13 Pro Max",
+    "price": "$1099.99",
+    "stock": "In Stock",
+    "stockBadge": "Green",
+    "description": "Flagship smartphone with ProMotion display and advanced camera system.",
+    "specification": {
+      "processor": "A15 Bionic",
+      "ram": "6GB",
+      "storage": "512GB",
+      "display": "6.7-inch Super Retina XDR"
+    },
+    "rating": "⭐ ⭐ ⭐ ⭐ ⭐",
+    "ratingValue": 4.9,
+    "image": "https://i.ibb.co/p3xvg07/apple-iphone-13-pro-max-gold-1.jpg"
+  },
+  {
+    "id": 7,
+    "category": "Laptops",
+    "title": "HP Spectre x360",
+    "price": "$1299.99",
+    "stock": "In Stock",
+    "stockBadge": "Green",
+    "description": "Convertible laptop with 4K display and long battery life.",
+    "specification": {
+      "processor": "Intel i7 11th Gen",
+      "ram": "16GB",
+      "storage": "1TB SSD",
+      "display": "13.3-inch 4K OLED"
+    },
+    "rating": "⭐ ⭐ ⭐ ⭐ ⭐",
+    "ratingValue": 4.7,
+    "image": "https://i.ibb.co/Ky4RhM1/hp-spectre-x360-core-i5-10th-gen-13-fhd-touchscreen-laptop-8gb-512-gb-ssd-32-gb-intel-optane-windows.jpg"
+  },
+  {
+    "id": 8,
+    "category": "Phones",
+    "title": "Google Pixel 6 Pro",
+    "price": "$899.99",
+    "stock": "In Stock",
+    "stockBadge": "Green",
+    "description": "Smartphone with advanced AI features and excellent camera.",
+    "specification": {
+      "processor": "Google Tensor",
+      "ram": "12GB",
+      "storage": "256GB",
+      "display": "6.7-inch AMOLED"
+    },
+    "rating": "⭐ ⭐ ⭐ ⭐ ⭐",
+    "ratingValue": 4.8,
+    "image": "https://i.ibb.co/XCzfCkh/Google-Pixel-6-Pro-featured-image-packshot-review-1024x691-1.jpg"
+  },
+  {
+    "id": 9,
+    "category": "Accessories",
+    "title": "Logitech MX Master 3",
+    "price": "$99.99",
+    "stock": "In Stock",
+    "stockBadge": "Green",
+    "description": "Advanced wireless mouse with ergonomic design.",
+    "specification": {
+      "batteryLife": "70 days",
+      "connectivity": "Bluetooth, USB Receiver",
+      "features": "Customizable Buttons, Fast Scrolling"
+    },
+    "rating": "⭐ ⭐ ⭐ ⭐ ⭐",
+    "ratingValue": 4.8,
+    "image": "https://i.ibb.co/jJ3ZKkh/61ni3t1ry-QL.jpg"
+  },
+  {
+    "id": 10,
+    "category": "Accessories",
+    "title": "Samsung Galaxy Watch 4",
+    "price": "$249.99",
+    "stock": "In Stock",
+    "stockBadge": "Green",
+    "description": "Smartwatch with advanced health tracking and Wear OS.",
+    "specification": {
+      "display": "Super AMOLED",
+      "batteryLife": "40 hours",
+      "features": "ECG, Blood Oxygen, Fitness Tracking"
+    },
+    "rating": "⭐ ⭐ ⭐ ⭐ ⭐",
+    "ratingValue": 4.7,
+    "image": "https://i.ibb.co/1TB8MN4/Gallery-Watch4-44-MM-BT-R-Perspective-Green-1600x1200.webp"
+  },
+  {
+    "id": 11,
+    "category": "Laptops",
+    "title": "Microsoft Surface Laptop 4",
+    "price": "$1299.99",
+    "stock": "In Stock",
+    "stockBadge": "Green",
+    "description": "A versatile laptop for work and play.",
+    "specification": {
+      "processor": "Intel i7 11th Gen",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "display": "13.5-inch PixelSense"
+    },
+    "rating": "⭐ ⭐ ⭐ ⭐ ⭐",
+    "ratingValue": 4.7,
+    "image": "https://i.ibb.co/nQMbNvN/Microsoft-Surface-Laptop-4.jpg"
+  },
+  {
+    "id": 12,
+    "category": "Laptops",
+    "title": "Acer Swift 3",
+    "price": "$899.99",
+    "stock": "In Stock",
+    "stockBadge": "Green",
+    "description": "A lightweight and affordable laptop with great performance.",
+    "specification": {
+      "processor": "AMD Ryzen 7 4700U",
+      "ram": "8GB",
+      "storage": "512GB SSD",
+      "display": "14-inch FHD"
+    },
+    "rating": "⭐ ⭐ ⭐ ⭐",
+    "ratingValue": 4.5,
+    "image": "https://i.ibb.co/NTLbf1P/4zu3-Acer-Swift3-SF314-42.jpg"
+  }
+]
