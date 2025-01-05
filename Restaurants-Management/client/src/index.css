@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --primary-500: #4caf50;
+    --primary-700: #388e3c;
+    --light-100: #fafafa;
+    --light-800: #333333;
+    --dark-700: #2c2f33;  
+    --dark-800: #1a1d21;  
+    --dark-600: #3a3f47;  
+    --light-300: #e0e0e0; 
+    --dark-300: #b0b0b0;  
+    --indigo-600: #3b82f6; 
+    --indigo-700: #2563eb; 
+    --gray-900: #181818; 
+    --gray-600: #6b7280; 
+    --white-900: #f1f1f1; 
+    --bg-dark: #121212;  
+}
+
+html, body {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+html.light {
+    background-color: var(--light-100);
+    color: var(--light-800);
+}
+
+html.dark {
+    background-color: var(--bg-dark);
+    color: var(--white-900);
+}
+
+
+html.dark .text-gray-900 {
+    color: var(--white-900);  
+}
+
+html.dark .text-gray-800 {
+    color: var(--gray-200);  
+}
+
+html.dark .text-gray-700 {
+    color: var(--gray-300);  
+}
+
+html.dark .text-gray-600 {
+    color: var(--gray-400);  
+}
+
+html.dark .text-gray-500 {
+    color: var(--gray-500);  
+}
+
+html.dark .text-gray-400 {
+    color: var(--gray-600);  
+}
+
+html.dark .text-gray-300 {
+    color: var(--gray-700);  
+}
+
+html.dark .text-gray-200 {
+    color: var(--gray-800);  
+}
+
+html.dark .text-gray-100 {
+    color: var(--gray-900);  
+}
+
+
+html.light .bg-gray-50 {
+    background-color: var(--light-100);  
+}
+
+html.dark .bg-gray-50 {
+    background-color: var(--gray-900);  
+}
+
+html.light .bg-white {
+    background-color: var(--light-100);  
+}
+
+html.dark .bg-white {
+    background-color: var(--dark-800);  
+}
+
+html.light .bg-gray-100 {
+    background-color: var(--light-300);  
+}
+
+html.dark .bg-gray-100 {
+    background-color: var(--dark-600);  
+}
+
+/* Navbar */
+.navbar {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+html.light .navbar {
+    background-color: var(--light-100);
+}
+
+html.dark .navbar {
+    background-color: var(--dark-700);
+    color: var(--white-900);
+}
+
+/* Navbar Buttons */
+.navbar-start button {
+    transition: color 0.4s ease;
+    color: var(--primary-500);
+}
+
+html.dark .navbar-start button {
+    color: var(--white-900);
+}
+
+/* Menu Links */
+.menu li a {
+    transition: color 0.4s ease;
+}
+
+html.light .menu li a:hover {
+    color: var(--primary-700);
+}
+
+html.dark .menu li a:hover {
+    color: var(--indigo-600);
+}
+
+/* Button Hover */
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Buttons */
+button {
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+html.light button {
+    background-color: var(--primary-500);
+    color: white;
+}
+
+html.dark button {
+    background-color: var(--primary-700);
+    color: var(--white-900);
+}
+
+/* Dark Mode Button Hover */
+html.dark button:hover {
+    background-color: var(--primary-500);
+}
+
+/* Avatar */
+.avatar img {
+    border-radius: 50%;
+    border: 2px solid var(--primary-500);
+}
+
+.avatar:hover {
+    border: 2px solid var(--primary-700);
+}
+
+/* Food Details Section */
+html.dark .food-card {
+    background-color: var(--dark-600);  
+    border-color: var(--dark-700);
+}
+
+html.dark .food-card h1 {
+    color: var(--white-900);  
+}
+
+html.dark .food-card p {
+    color: var(--dark-300);  
+}
+
+html.dark .food-card .text-green-600 {
+    color: var(--primary-500);  
+}
+
+html.dark .food-card .text-gray-500 {
+    color: var(--dark-300);  
+}
+
+html.dark .food-card button {
+    background-color: var(--indigo-600);
+    color: var(--white-900);
+}
+
+html.dark .food-card button:hover {
+    background-color: var(--indigo-700);
+}
+
+/* Purchase Button in Dark Mode */
+html.dark .purchase-button {
+    background-color: var(--primary-700);
+    color: var(--white-900);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+html.dark .purchase-button:hover {
+    background-color: var(--primary-500);
+}
+
+/* Dynamic Availability Badge */
+html.dark .food-card .availability-badge {
+    background-color: var(--dark-600);
+    color: var(--white-900);
+}
