@@ -1,0 +1,15 @@
+{
+ "main": "index.js",
+ "scripts": {
+  "start": "node index.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "dependencies": {
+  "cookie-parser": "^1.4.7",
+  "cors": "^2.8.5",
+  "dotenv": "^16.4.7",
+  "jsonwebtoken": "^9.0.2",
+  "mongodb": "^6.12.0",
+  "xpress": "^2.4.6"
+ }
+}
