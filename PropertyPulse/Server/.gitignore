@@ -1,0 +1,4 @@
+node_modules
+.env
+config/real-estate-platform-653cf-firebase-adminsdk-3dosc-3be90f05f3.json
+.vercel
